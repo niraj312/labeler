@@ -5,3 +5,6 @@ label2: example2/*
 
 label3:
 - example3/**/*.yml
+
+label4: 
+- autoview*/**/*
