@@ -4,5 +4,4 @@ label1:
 label2: example2/*
 
 label3:
-- *
 - example3/**/*.yml
