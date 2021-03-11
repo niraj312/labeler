@@ -1,9 +1,11 @@
 name: "PR-Labeler"
 on:
-- pull_request_target
+- pull_request_target:
+    types: [opened, reopened]
 
 jobs:
   label: 
+    if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     steps:
     - uses: actions/labeler@main
